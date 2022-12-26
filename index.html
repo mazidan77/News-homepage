@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+  .navi{
+    display: flex;
+    justify-content: space-between;
+   
+    margin-left: auto;
+  }
+ .nav-link{
+    color:  hsl(236, 13%, 42%);
+ }
+ .nav-link:hover{
+    color: hsl(35, 77%, 62%);
+ }
+ section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+ }
+ .one{
+  
+    grid-column: 1/9;
+ }
+ .two{
+    grid-column: 9/13;
+    background-color: hsl(240, 100%, 5%);
+    padding: 30PX 20PX;
+ }
+ section h2{
+    color: hsl(35, 77%, 62%);
+ }
+.title{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.title:hover{
+    color:hsl(35, 77%, 62%) ;
+}
+.subtitle{
+   
+    color: hsl(36, 100%, 99%);
+ 
+}
+.cont{
+    border-bottom: 1px solid white;
+padding-top: 20px;
+padding-bottom: 10px;
+   
+}
+.cont1{
+   
+padding-top: 20px;
+padding-bottom: 10px;
+   
+}
+.post{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+ }
+ .left{
+    grid-column: 1/7;
+ }
+ .right{
+    grid-column: 7/13;
+ }
+ .left p{
+    font-weight: bold;
+    font-size: 50px;
+ }
+ .right p{
+    color: grey;
+ }
+ .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+ }
+ .btn1{
+    background-color:  hsl(35, 77%, 62%);
+    padding: 10px;
+    color: white;
+ }
+ .btn1:hover{
+  background-color:hsl(240, 100%, 5%); ;
+ }
+ .image{
+  height: 100%;
+  width: 180px;
+ }
+ .img2{
+  display: none;
+ }
+ .t-hover:hover{
+  color:hsl(35, 77%, 62%) ;
+ }
+ .pointer{
+  cursor: pointer;
+ }
+ @media (max-width:992px) {
+    .one{
+        grid-column: 1/13;
+        
+    }
+    .one .img1{
+      display: none;
+    }
+    .one .img2{
+      display: block;
+    }
+    
+    .two{
+        grid-column: 1/13;
+    }
+   
+    .left{
+        grid-column: 1/13;
+    }
+  .right{
+    grid-column: 1/13;
+  }
+    }
+    .one img{
+        width: 100%;
+    }
+
+    .fs-30{
+      font-size: 30px;
+    }
+    .f-bold{
+      font-weight: bold;
+    }
+    .c-gray{
+      color: gray;
+    }
+
+ 
+</style>
+
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg   ">
+       
+        <div class="container-fluid  ">
+           
+          <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav     navi ">
+              <li class="nav-item mx-3">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">new</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">popular</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link ">categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      <!-- start main -->
+
+<section>
+    <div class="one">
+        <div><img class="img1" src="images/image-web-3-desktop.jpg" alt=""></div>
+        <div><img class="img2" src="images/image-web-3-mobile.jpg" alt=""></div>
+        <div class="post">
+            <div class="left">
+                <p>The Bright Future Of Web 3.0? </p>
+            </div>
+            <div class="right">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut repellat minima quod ea a</p>
+                <p class="btn1 pointer">READ MORE</p>
+            </div>
+        </div>
+      
+    </div>
+    <div class="two">
+<h2>NEW</h2>
+<div class="cont">
+    <P class="title pointer">Hydrogen VS Electric Cars</P>
+    <p class="subtitle">will hydrogen fueled cars ever catch upto Evs?</p>
+</div>
+<div class="cont">
+    <P class="title pointer">Hydrogen VS Electric Cars</P>
+    <p class="subtitle">will hydrogen fueled cars ever catch upto Evs?</p>
+</div>
+<div class="cont1">
+    <P class="title pointer">Hydrogen VS Electric Cars</P>
+    <p class="subtitle">will hydrogen fueled cars ever catch upto Evs?</p>
+</div>
+
+
+</section>
+
+
+      <!-- end main -->
+      <!-- start end -->
+      <div class="row my-5">
+        <div class="col-sm-12 col-lg-4 mb-3 mb-sm-0">
+          <div class="card border-0">
+            <div class="card-body d-flex ">
+              <div class="me-5"><img class="img-fluid image" src="images/image-retro-pcs.jpg " alt=""></div>
+
+              <div>
+                <p class="c-gray f-bold fs-30">01</p>
+                 <h5 class="card-title f-bold t-hover pointer">reviving retro PCs</h5>
+                <p class="card-text c-gray">what happen when old PCs are given modern upgrade?</p>
+             </div>
+             
+            </div>
+          </div>
+        </div>
+   
+        <div class="col-sm-12 col-lg-4 mb-3 mb-sm-0">
+          <div class="card border-0">
+            <div class="card-body d-flex ">
+              <div class="me-5"><img class="img-fluid image" src="images/image-top-laptops.jpg " alt=""></div>
+
+              <div>
+                <p class="c-gray f-bold fs-30">02</p>
+                 <h5 class="card-title f-bold t-hover pointer">reviving retro PCs</h5>
+                <p class="card-text c-gray">whay happen when old PCs are given modern upgrade?</p>
+             </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 mb-3 mb-sm-0">
+          <div class="card border-0">
+            <div class="card-body d-flex ">
+              <div class="me-5"><img class="img-fluid image" src="images/image-gaming-growth.jpg" alt=""></div>
+
+              <div>
+                <p class="c-gray f-bold fs-30">03</p>
+                 <h5 class="card-title f-bold t-hover pointer">reviving retro PCs</h5>
+                <p class="card-text c-gray">whay happen when old PCs are given modern upgrade?</p>
+             </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end end -->
+  </div>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
